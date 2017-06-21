@@ -1,0 +1,10 @@
+ Jesteś administratorem systemu. Otrzymałeś zadanie związane z bezpieczeństwem danych ważnych dla kierownictwa. Dodatkowo otrzymałeś dodatkowe 2 dyski 1GB do realizacji tego zadania. Otrzymałeś dwa dyski 1GB które w systemie prezentowane są jako urządzenie xvdb (lub sdb) i xvdc (lub sdc) Utwórz urządzenie (macierz lub LVM) które zapewni bezpieczństwo danych mimo awarii jednego dysku.
+<br/>
+Macierz ma być sformatowana w systemie plików ext3. Macierz podmontuj do katalogu /security_backup
+<br/>
+System plików drugiej partycji na Twoim dysku to ext2 (punkt montowania /informacje). Zmień jego system plików na ext3 bez utraty zawartości, dokonaj wszelkich zmian, aby system poprawnie identyfikował ją jako ext3.
+<br/>
+Dodatkowo, utwórz partycję btrfs o rozmiarze 500MB, zamontuj ją w /btrfs. Partycja musi mieć swój wpis w fstab.
+<br/>
+System plików na drugiej partycji Twojego dysku to ext2/ext3/ext4. Sprawdź ten system plików pod kątem występowania błędów, które w przypadku wystąpienia automatycznie zostaną naprawione. 
+<br/>
