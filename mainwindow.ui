@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Linux edu practice</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/egzaminator-icon.png</normaloff>:/icons/egzaminator-icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="Submit">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>530</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Submit</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>871</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="InfoWpis">
+       <property name="text">
+        <string>Wybierz zadanie: </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextBrowser" name="tekst">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>871</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>691</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>530</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>691</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="blad">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>691</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="opisy_zadanek">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>40</y>
+      <width>481</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="zadanie_3">
+     <widget class="QLabel" name="opis">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tworzenie partycji, konserwacja systemu plików</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Rzadanie_3">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>460</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_4">
+     <widget class="QPushButton" name="Rzadanie_4">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tworzenie użytkowników, grup, ustawienia domyślne</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_5">
+     <widget class="QPushButton" name="Rzadanie_5">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Zabezpieczenia i bezpieczeństwo użytkowników i systemu; uprawnienia do plików</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_6">
+     <widget class="QPushButton" name="Rzadanie_6">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Polecenia konsoli, użycie tekstowych narzędzi w wierszu poleceń, potoki i przekierowania</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_7">
+     <widget class="QPushButton" name="Rzadanie_7">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Instalacja, aktualizacja i usuwanie oprogramowania, repozytoria i pakiety</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_8">
+     <widget class="QPushButton" name="Rzadanie_8">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Konfiguracja programu ładującego, konfiguracja usług</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_9">
+     <widget class="QPushButton" name="Rzadanie_9">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Zarządzanie procesami – priorytety, uruchamianie w tle, zatrzymywanie</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_10">
+     <widget class="QPushButton" name="Rzadanie_10">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Konfiguracja interfejsów sieciowych, reguł firewall, routingu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_11">
+     <widget class="QPushButton" name="Rzadanie_11">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Konfiguracja sprzętu za pomocą usługi udev, moduły jądra</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_12">
+     <widget class="QPushButton" name="Rzadanie_12">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SSH, telnet</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_13">
+     <widget class="QPushButton" name="Rzadanie_13">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Konfiguracja logów systemowych – syslog-ng, logrotate</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_14">
+     <widget class="QPushButton" name="Rzadanie_14">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Planowanie zadań za pomocą cron, at</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="zadanie_15">
+     <widget class="QPushButton" name="Rzadanie_15">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rozpocznij</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="opis_13">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tworzenie kopii zapasowych katalogów – rsync, tar</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>381</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maxVisibleItems">
+     <number>15</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Administracja systemami plików</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Podstawy zarządzania użytkownikiem, grupami i uprawnieniami</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Administracja uwierzytelnieniem i bezpieczeństwem użytkowników i grup</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Praca z poleceniami konsoli</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Zarządzanie oprogramowaniem</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Start systemu i poziomy pracy</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Administrowanie procesami</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Konfiguracja sieci</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Zarządzanie sprzętem</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Zdalna administracja</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Monitorowanie systemu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Planowanie zadań i zabezpieczanie danych</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Zabezpieczanie danych</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>i</string>
+    </property>
+   </widget>
+   <zorder>tekst</zorder>
+   <zorder>Submit</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>horizontalLayoutWidget_2</zorder>
+   <zorder>exit</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>progressBar</zorder>
+   <zorder>opisy_zadanek</zorder>
+   <zorder>comboBox</zorder>
+   <zorder>info</zorder>
+  </widget>
+  <action name="actionTest1">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Test1</string>
+   </property>
+  </action>
+  <action name="actionTest2">
+   <property name="text">
+    <string>Test2</string>
+   </property>
+  </action>
+  <action name="actionTest3">
+   <property name="text">
+    <string>Test3</string>
+   </property>
+  </action>
+  <action name="actionTest4">
+   <property name="text">
+    <string>Test4</string>
+   </property>
+  </action>
+  <action name="actionTest5">
+   <property name="text">
+    <string>Test5</string>
+   </property>
+  </action>
+  <action name="actionTest1_2">
+   <property name="text">
+    <string>Test1</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>815</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
